@@ -29,18 +29,29 @@ let photoPackages = [
         harga: 600000,
     }
 ];
+
 let nextId = 4;
 
 app.get("/", (req, res) => {
   res.json({
-    message: "RESTful API Studio Foto",
+    nama: "Adelia",
+    nim: "2428240104",
+    topik: 29,
+    endpoints: [
+      "GET /photo-packages",
+      "GET /photo-packages/:id",
+      "POST /photo-packages",
+      "PUT /photo-packages/:id",
+      "DELETE /photo-packages/:id",
+      "GET /photo-packages?jenis=wisuda"
+    ]
   });
 });
 
-// GET/photo-packages
+// GET /photo-packages
 app.get("/photo-packages", (req, res) => {
     res.json(photoPackages);
-})
+});
 
 // GET /photo-packages/:id
 app.get("/photo-packages/:id", (req, res) => {
