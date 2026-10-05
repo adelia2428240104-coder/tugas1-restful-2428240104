@@ -24,5 +24,7 @@ API dibangun menggunakan Node.js dan Express.js dengan penyimpanan data sementar
 
 
 ## Deployment
+
 Link deployment Vercel:
+
 https://tugas1-restful-2428240104.vercel.app/
